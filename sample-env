@@ -1,0 +1,24 @@
+# REQUIRED
+CSV_PATH=data/processed/combined_dataset.csv
+
+# VISUAL MODEL TRAINING CONFIGURATIONS
+
+EPOCHS=30                        # No. of passes over the training set
+BATCH_SIZE=64                   # No. of images per step (depends on GPU memory)
+LR=0.0001                       # Base learning rate for AdamW
+WEIGHT_DECAY=0.0001             # L2-style regularization in AdamW
+MODEL_NAME=resnet50             # Visual backbone model
+FEATURE_DIM=512                 # Size of visual feature vector
+FREEZE_BACKBONE=false           # Train only classifier head
+UNFREEZE_BACKBONE=false         # Fine-tune the backbone
+USE_PRETRAINED=true             # Load ImageNet weights for backbone
+NUM_WORKERS=8                   # Dataloader workers
+SEED=42                         # Shuffling and Augmentation
+OUTDIR=./checkpoints
+TRAIN_SPLIT=0.7                 # fraction of train data split
+VAL_SPLIT=0.15                  # fraction of validation data split
+TEST_SPLIT=0.15                 # fraction of test data split
+AMP=true                        # Mixed precision training (fp16 autocast) (CPU - false, GPU - true)
+
+RESUME=true                     # To load an existing checkpoint
+RESUME_PATH=checkpoints/last.ckpt
