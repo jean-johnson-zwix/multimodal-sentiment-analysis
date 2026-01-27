@@ -5,7 +5,7 @@ A multi-modal model that can analyze an image + text (integrating two modality o
 
 ## Demo Video
 
-<video src="media/demo.mp4" width="320" height="240" controls></video>
+https://github.com/user-attachments/assets/37c145ca-5179-46dc-b715-b167a23ad07b
 
 ## Main Concept
 
