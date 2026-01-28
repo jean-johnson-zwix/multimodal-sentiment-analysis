@@ -1,7 +1,7 @@
 # Multimodal Sentiment Analysis
 Multi-Modal Sentiment Analysis using Attention Based Fusion for Image and Text Data
 
-A multi-modal model that can analyze an image + text (integrating two modality of data) to perform a deeper analysis. We do a sentiment classification (e.g. positive, negative, neutral, sarcastic) and generate a context-aware description.
+A multi-modal model that can analyze an image + text (integrating two modality of data) to perform a deeper analysis. We do a sentiment classification (e.g. positive, negative, neutral) and generate a context-aware description.
 
 ## Demo Video
 
